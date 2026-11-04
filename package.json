@@ -10,7 +10,11 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "db:push": "supabase db push --remote",
+    "db:push:seed": "supabase db push --remote --include-seed",
+    "db:pull": "supabase db pull",
+    "db:types": "supabase gen types typescript --remote > src/types/database.types.ts"
   },
   "keywords": [],
   "author": "",
